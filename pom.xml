@@ -9,7 +9,7 @@
     <description>App</description>
 
     <properties>
-        <java.version>21</java.version>
+        <maven.compiler.release>21</maven.compiler.release>
     </properties>
     <dependencies>
 
@@ -39,8 +39,12 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>me.oneorg.app.AppApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
