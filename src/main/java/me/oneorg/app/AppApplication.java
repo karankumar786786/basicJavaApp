@@ -15,7 +15,6 @@ import org.springframework.web.servlet.DispatcherServlet;
 import java.io.File;
 
 public class AppApplication {
-
     public static void main(String[] args) throws LifecycleException {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8080);
