@@ -8,7 +8,4 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan(basePackages = "me.oneorg.app")
 public class WebConfig {
-    public WebConfig() {
-        System.out.println(">>> WebConfig instantiated!");
-    }
 }

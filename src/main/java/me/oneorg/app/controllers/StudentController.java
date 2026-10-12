@@ -11,7 +11,6 @@ import java.util.Collection;
 public class StudentController {
     private final StudentService studentService;
     public StudentController(StudentService studentService){
-        System.out.println(">>> StudentController instantiated!");
         this.studentService = studentService;
     }
     @PostMapping
